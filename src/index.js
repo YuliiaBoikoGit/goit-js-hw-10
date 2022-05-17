@@ -14,6 +14,7 @@ function onSearch(event) {
 
     if (countryName === '') {
         resetCountryList();
+        return;
     };
 
     fetchCountries(countryName)
